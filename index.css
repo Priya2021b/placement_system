@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    background-color: black;
+}
+.navbar img{
+    width: 40vw;
+    height: auto;
+}
+.login a img{
+    width: 3vw;
+    height: auto;
+}
+.login a img:hover{
+    width: 3.2vw;
+    height: auto;
+}
+.login{
+    width: 5%;
+    margin: 0.9vh ;
+}
+.login a{
+    margin-right: 1vw;
+}
+.menuitem{
+    margin: 0.5vh;
+}
+.menuitem li a{
+    text-decoration: none;
+    color: white;
+    margin-left: 5vw;
+    font-size: 20px;
+}
+.menuitem li a:hover{
+    text-decoration: none;
+    cursor: pointer;
+    color: yellow;
+    margin-left: 5vw;
+}
+.menuitem ul{
+    list-style-type: none;
+    display: flex;
+}
+.recruiters{
+    margin-top: 5vh;
+    height: 8vh;
+    background-color: white;
+    text-align: center;
+}
+.grid{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.companylogo{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,300px));
+    column-gap: 1px;
+    row-gap: 15px;
+    background-color: grey;
+}
+.companylogo img{
+    width: 280px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+    margin-left: 8px;
+    transition: 0.5s;
+}
+.companylogo img:hover
+{
+    width: 280px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+    margin-left: 8px;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform: translateY(-12px); 
+}
+.founders{
+    height: 7vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+.ratan img{
+    width: 20vw;
+    height: auto;
+}
+.tata h2{
+    background-color: gray;
+    text-align: center;
+    padding-top: 1vh;
+    width: 100%;
+}
+.ratan{
+    background-color: gray;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    width: 100%;
+    display: flex;
+}
+.socialsitelogo{
+    display: flex;
+    
+    height: 10vh;
+    background-color: black;
+}
+.socialsitelogo p{
+    margin: 2vh 2vw;
+    color: white;
+    font-size: 2vw;
+    
+}
+.socialsitelogo a img{
+    
+    margin-top: 2vh;
+    margin-left: 8vw;
+    width: 3vw;
+    height: 6vh;
+}
+.socialsitelogo a .photo{
+    margin-left: 3vw;
+}

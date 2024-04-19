@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contactform</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        body{
+            background: url("./logo/contact.jpg");
+            background-size: cover;
+        }
+        .contact{
+            color: white;
+            justify-content: center;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .contact h1{
+            font-size: 50px;
+        }
+        .contact h2{
+            font-size: 40px;
+        }
+        .contact-form{
+            width: 650px;
+            height: 420px;
+            margin-top: 25px;
+            background: transparent;
+            color: #fff;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            box-sizing: border-box;
+            padding: 70px 30px;
+        }
+        .contact-form p{
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+        }
+        .contact-form input{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .contact-form input[type="text"], input[type="email"], textarea{
+            border: none;
+            border-bottom: 1px solid #fff;
+            background: transparent;
+            outline: none;
+            height: 40px;
+            color: #fff;
+            font-size: 16px;
+        }
+        textarea{
+            padding-top: 10px;
+            border-bottom: 1px solid #fff;
+        }
+        .contact-form input[type="submit"]{
+            border: none;
+            outline: none;
+            height: 40px;
+            background: #fb2525;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 20px;
+            margin-top: 40px;
+        }
+        .contact-form input[type="submit"]:hover{
+            cursor: pointer;
+            background: #ffc107;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="item">
+    <div class="contact">
+        <h1>Hello</h1>
+        <h2>We are always ready to serve you</h2>
+    </div>
+    <div class="contact-form">
+       
+        <form action= "thankyou.php"method="POST" class=" contact-form">
+            <p>Name</p>
+            <input class="form-control" type="text" name="name" placeholder="Your Name"required>
+            <p>E-mail</p>
+            <input class="form-control" type="email"name="email"placeholder="Your Email"required>
+            <p>Message</p>
+            <textarea name="message" class="form-control"placeholder="Message"row="4"required></textarea>
+            <input type="submit" class="form-control submit" value="SEND MESSAGE">
+           
+        </form>
+    </div>
+    </div>
+</body>
+</html>
